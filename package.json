@@ -1,0 +1,33 @@
+{
+  "name": "react-pikatime",
+  "version": "0.0.1",
+  "description": "A timepicker component for React.",
+  "main": "lib/index.js",
+  "scripts": {
+    "start-dev": "babel --stage 1 ./src --watch --out-dir ./lib & npm link && cd demo && npm install && npm link react-pikatime && npm run start-dev",
+    "prebuild": "rm -rf lib/*",
+    "build": "babel ./src --out-dir ./lib",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "timepicker",
+    "es6",
+    "time",
+    "react"
+   ],
+  "author": "Lucas Aragno <lucas.aragno157@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/lucas-aragno/react-pikatime"
+  },
+  "bugs": {
+    "url": "http://github.com/lucas-aragno/react-pikatime/issues"
+  },
+  "dependencies": {
+    "react": "^0.14.3"
+  },
+  "devDependencies": {
+    "babel": "^5.8.34"
+  }
+}
