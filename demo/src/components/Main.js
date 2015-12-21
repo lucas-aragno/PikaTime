@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PIKATIME from 'react-pikatime'
+import PikaTime from 'react-pikatime'
 
 export default class Main extends Component {
 
@@ -11,7 +11,7 @@ export default class Main extends Component {
     return (
     <main>
       <h1>REACT PIKATIME</h1>
-      <PIKATIME parentCallback={this.onTimeChange.bind(this)} />
+      <PikaTime parentCallback={this.onTimeChange.bind(this)} />
     </main>
     )
   }
